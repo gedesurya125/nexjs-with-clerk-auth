@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.6.7",
+    "@clerk/themes": "^1.2.31",
+    "@gedesurya125/surya-ui": "^2.5.4",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
