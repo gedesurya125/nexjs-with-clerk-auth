@@ -38,6 +38,9 @@ function MyApp({ Component, pageProps }) {
           },
           formButtonPrimary: {
             backgroundColor: "teal",
+            "&:hover": {
+              backgroundColor: "darkslategrey",
+            },
           },
           logoBox: {
             margin: "0 auto",
@@ -54,6 +57,23 @@ function MyApp({ Component, pageProps }) {
             "&:hover, &:active &:focus": {
               borderColor: "teal",
             },
+          },
+          navbar: {
+            background: "teal",
+            borderRadius: "0.8rem",
+          },
+          navbarButton: {
+            color: "white",
+          },
+          headerTitle: {
+            marginRight: "auto",
+            color: "teal",
+          },
+          headerSubtitle: {
+            marginRight: "auto",
+          },
+          profileSectionTitleText: {
+            color: "teal",
           },
         },
       }}

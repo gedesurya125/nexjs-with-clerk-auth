@@ -1,5 +1,5 @@
 import React from "react";
-import { useUser } from "@clerk/clerk-react";
+import { useAuth } from "@clerk/clerk-react";
 import { useClerk } from "@clerk/clerk-react";
 import Link from "next/link";
 import { Box, Button } from "@gedesurya125/surya-ui";
@@ -7,8 +7,9 @@ import { useRouter } from "next/router";
 
 export const UserBar = () => {
   const { signOut } = useClerk();
-  const { user } = useUser();
+  const { isSignedIn } = useAuth();
   const router = useRouter();
+
   return (
     <Box
       sx={{
@@ -19,7 +20,7 @@ export const UserBar = () => {
         mt: "2rem",
       }}
     >
-      {!user ? (
+      {!isSignedIn ? (
         <>
           <Link
             style={{
